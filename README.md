@@ -16,3 +16,17 @@ Dando como resultado lo siguiente
 ![Después de segunda actualización parte 1](https://github.com/AGHERSE/Sofka-CanteraII-Taller7/blob/main/Evidencia/UpdatePart4.jpg)
 
 ![Después de segunda actualización parte 2](https://github.com/AGHERSE/Sofka-CanteraII-Taller7/blob/main/Evidencia/UpdatePart5.jpg)
+
+
+
+# Eliminado Físico y Lógico
+
+## Eliminado lógico
+
+![Eliminado lógico](https://github.com/AGHERSE/Sofka-CanteraII-Taller7/blob/main/Evidencia/LogicDelete.jpg)
+
+## Eliminado físico
+
+![Primera Parte Eliminado Físico](https://github.com/AGHERSE/Sofka-CanteraII-Taller7/blob/main/Evidencia/PhysicalDeletePart1.jpg)
+
+![Segunda Parte Eliminado Físico](https://github.com/AGHERSE/Sofka-CanteraII-Taller7/blob/main/Evidencia/PhysicalDeletePart2.jpg)
