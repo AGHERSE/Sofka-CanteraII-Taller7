@@ -1,0 +1,27 @@
+1) Consulta SQL donde pueda obtener los productos vendidos digitando tipo de documento y número de documento.
+
+SELECT * FROM detallesproducto WHERE referenciaRecibo IN (
+	SELECT DISTINCT recibos.idRecibo FROM recibos 
+	INNER JOIN clientes 
+	ON 
+	recibos.DNI_Cliente = '1320656484'
+	AND clientes.tipo_documento = 'T.I.'
+);
+
+
+
+2) Consultar productos por medio del nombre, el cual debe mostrar quien o quienes han sido sus proveedores.
+
+SELECT * FROM proveedores WHERE idProveedor IN(
+	SELECT Proveedores_idProveedor FROM productos WHERE nombre = 'PharmaRight Extra Strength Antacid PEPPERMINT'
+);
+
+
+
+[PLUS no obligatorio] Crear una consulta que me permita ver qué producto ha sido el más vendido y en qué cantidades de mayor a menor.
+
+SELECT productos.*, SUM(detallesproducto.productoReferencia) AS cantidadVendida
+FROM detallesproducto JOIN productos
+ON 
+detallesproducto.productoReferencia = productos.idProducto
+GROUP BY productoReferencia ORDER BY cantidadVendida DESC;
